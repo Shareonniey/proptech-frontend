@@ -1,0 +1,97 @@
+{
+  "hero": {
+    "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "headline": "Find Your Next Home, Faster.",
+    "subtext": "Search thousands of verified apartments, houses, and developments across Kenya.",
+    "buttonText": "Get Started",
+    "buttonLink": "/properties"
+  },
+
+  "features": [
+    {
+      "id": 1,
+      "icon": "🏠",
+      "title": "Verified Listings",
+      "text": "All properties are vetted to ensure safety and legitimacy."
+    },
+    {
+      "id": 2,
+      "icon": "⚡",
+      "title": "Instant Search",
+      "text": "Filter by location, price, bedrooms and more in seconds."
+    },
+    {
+      "id": 3,
+      "icon": "📍",
+      "title": "Location Accuracy",
+      "text": "All listings provide precise location details for easier decision-making."
+    }
+  ],
+
+  "cardsSectionOne": [
+    {
+      "id": 1,
+      "title": "Find Homes Tailored to You",
+      "text": "Discover properties based on your needs — family homes, modern apartments, or serviced units.",
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2"
+    }
+  ],
+
+  "cardsSectionTwo": [
+    {
+      "id": 1,
+      "title": "Built for Property Seekers",
+      "text": "Whether you’re renting or buying, our platform simplifies the search so you save time and money.",
+      "image": "https://images.unsplash.com/photo-1599423300746-b62533397364"
+    }
+  ],
+
+  "ctaBanner": {
+    "text": "Start your property search today — your next home is waiting.",
+    "buttonText": "Browse Properties",
+    "buttonLink": "/properties"
+  },
+
+  "trustedBy": [
+    {
+      "id": 1,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
+    },
+    {
+      "id": 2,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg"
+    },
+    {
+      "id": 3,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/08/Nairobi_City_County_Logo.png"
+    },
+    {
+      "id": 4,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Kenya_Power_Logo.png"
+    },
+    {
+      "id": 5,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/51/Airtel_logo_2018.png"
+    },
+    {
+      "id": 6,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Safaricom_logo.svg"
+    },
+    {
+      "id": 7,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d2/UNICEF_Logo.png"
+    },
+    {
+      "id": 8,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Uber_Logo_Black.svg"
+    },
+    {
+      "id": 9,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3a/IBM_logo.svg"
+    },
+    {
+      "id": 10,
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Microsoft_logo.svg"
+    }
+  ]
+}
