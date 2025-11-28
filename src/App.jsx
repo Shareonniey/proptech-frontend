@@ -30,7 +30,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home loading={loading} houses= {houses} />} />
-        <Route path="/pages/:id" element={<PropertyDetails loading={loading} houses={houses} />} />
+        <Route path="/houses/:id" element={<PropertyDetails loading={loading} houses={houses} />} />
         <Route path="/add" element={<AddPropertyForm houses={houses} />} />
         <Route path="/about" element={<About />} />
       </Routes>

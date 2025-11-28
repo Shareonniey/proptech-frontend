@@ -1,23 +1,37 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import PropertyCard from "../components/PropertyCard";
+import { useState, useEffect } from "react";
 
-export default function Home({loading, houses}) {
-  
-  if (loading) {return <p>Loading...</p>}
-  return <>
-  <ul>
-    {houses.map((house)=>(
-      <li key = {house.id}>
-        <h3>{house.title}</h3>
-        <p>City: {house.city}</p>
-        <p>Estate: {house.estate}</p>
-        <p>Rent: KES {house.price}</p>
-        <p>Bedrooms: {house.bedrooms}</p>
-        <p>Bathrooms: {house.bathrooms}</p>
-        <p>Parking spaces: {house.parking}</p>
-        <Link to={`/pages/${house.id}`}> Details</Link>
-      </li>
-    ))}
-  </ul>
-  
-  </>
+export default function Home() {
+  const [houses, setHouses] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/properties")
+      .then((res) => res.json())
+      .then((data) => {
+        setHouses(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error("Error fetching properties:", err);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
+
+  return (
+    <div>
+      <ul>
+        {houses.map((house) => (
+          <li key={house.id}>
+            <PropertyCard house={house} />
+            <Link to={`/houses/${house.id}`}>View Details</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
+
